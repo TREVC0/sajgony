@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Cen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <form>
+            <fieldset>
+                <legend>Wybierz ilość</legend>
+                <label for="jedzenie">Podaj ilość jedzenia (3000$)</label>
+                <input type="number" id="jedzenie"><br>
+                <label for="napoje">Podaj ilość napojów (2700$)</label>
+                <input type="number" id="napoje"><br>
+                <label for="inne">Podaj ilość Sushi/Ciastek z wróżbą (5000$)</label>
+                <input type="number" id="inne"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Podsumowanie</legend>
+                <div class="checkbox-container">
+                    <label for="znizka">Czy klient posiada zniżkę? (min 5 zestawów)</label>
+                    <label class="switch">
+                        <input type="checkbox" id="znizka">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p id="suma">Do zaplaty:</p>
+                <input type="button" value="Sumuj" onclick="suma()">
+            </fieldset>
+        </form>
+
+    </div>
+    
+    <script src="script.js"></script>
+    <footer>&copy; TREVC (Modification - MBCODE) 2024</footer>
+    
+</body>
+</html>
